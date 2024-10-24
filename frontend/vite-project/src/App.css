@@ -1,0 +1,67 @@
+/* Container for weather summaries */
+body {
+  background-image: url('https://t4.ftcdn.net/jpg/06/41/91/85/360_F_641918542_bL3O5qWqKmaVrxM12Qa1pp1owFvKKP3k.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #fff; /* Adjust color for readability */
+}
+
+.weather-summary-container {
+  text-align: center;
+  padding: 20px;
+  
+  border-radius: 10px;
+  min-height: 100vh; /* Ensure it covers the whole page */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 50px; /* Space between grid items */
+  justify-items: center;
+  align-items: center;
+}
+
+/* Individual weather summary card */
+.weather-summary {
+  background-color: #e9d8d8;
+    border: 1px solid #150909;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Hover effect for cards */
+.weather-summary img {
+  width: 80px;
+  height: 80px;
+}
+.weather-summary:hover {
+  transform: translateY(-5px);
+}
+
+/* Weather icon styling */
+.App{
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+}
