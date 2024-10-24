@@ -1,7 +1,7 @@
 
 #### Weather Monitoring System
 
-```md
+
 # Real-time Weather Monitoring System
 
 A weather monitoring system that fetches and displays real-time weather data using an external API.
